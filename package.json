@@ -1,0 +1,15 @@
+{
+    "name": "html-css-learning",
+    "version": "1.0.0",
+    "description": "HTML CSS Leanring",
+    "license": "MIT",
+    "scripts": {},
+    "dependencies": {
+        "gulp": "3.9.1",
+        "gulp-connect": "^5.7.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-util": "^3.0.8",
+        "http-rewrite-middleware": "^0.1.6"
+    },
+    "devDependencies": {}
+}
