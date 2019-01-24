@@ -37,25 +37,35 @@ body {
 .sideBarIcon__menu__top div {
   text-align: center; }
 
-.message {
+.sideBarIcon__menu__top div:nth-child(3) {
   margin: 13px 0 14px 0;
   position: relative;
   width: 100%; }
 
-.message a span {
+.sideBarIcon__menu__top div:nth-child(3) a span {
   border-radius: 7px;
   background-color: #d90909;
   color: #ffffff;
   font-family: "Noto Sans CJ Kjp - Medium";
   font-size: 8px;
-  font-weight: 500;
-  height: 12px;
-  padding: 2px 0;
+  font-weight: 600;
+  height: 14px;
+  padding: 1px 2px;
   position: absolute;
   right: 15px;
-  top: -4px;
+  top: -3px;
   text-align: center;
   width: 14px; }
+
+.sideBarIcon__menu__top div:nth-child(3):before {
+  content: '';
+  border: 4px solid #d90909;
+  border-width: 0 0 0 4px;
+  width: 4px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: -4px; }
 
 .sideBarIcon__menu__top .message a img:last-child:after {
   padding-left: 8px; }
@@ -75,11 +85,12 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 160px;
-  min-height: 100%; }
+  min-height: 100%;
+  padding: 0 10px 0 9px; }
 
 .sideBarNav__dropMenu img {
   float: right;
-  margin: 10px 10px 21px 0; }
+  margin: 10px 0 21px 0; }
 
 .sideBarNav__title {
   align-items: center;
@@ -100,34 +111,53 @@ body {
   display: flex;
   flex-direction: column; }
 
-.sideBarNav .sideBarNav__mediaMenu div:not(.sideBarNav__mediaMenu__tooltipChat) {
-  margin-bottom: 30px;
-  margin-left: 9px; }
+.sideBarNav .sideBarNav__mediaMenu div {
+  margin-bottom: 30px; }
 
-.sideBarNav .sideBarNav__mediaMenu div a img {
-  margin-right: 5px; }
-
-.sideBarNav .sideBarNav__mediaMenu div:not(.sideBarNav__mediaMenu__tooltipChat) a span {
+.sideBarNav .sideBarNav__mediaMenu div:not(:first-child) a span {
   color: #010101;
   font-family: "Noto Sans CJK JP Bold";
   font-size: 14px;
   font-weight: 700; }
 
-.sideBarNav .sideBarNav__mediaMenu__tooltipChat {
+.sideBarNav__mediaMenu div:first-child {
+  position: relative; }
+
+.sideBarNav__mediaMenu div:first-child:before {
+  content: '';
+  border: 4px solid #1177ee;
+  border-width: 0 0 0 4px;
+  width: 4px;
+  height: 40px;
+  position: absolute;
+  left: -8px;
+  top: -8px; }
+
+.sideBarNav__mediaMenu div:first-child {
   margin-bottom: 20px; }
 
-.sideBarNav__mediaMenu__tooltipChat a img,
-.sideBarNav__mediaMenu__tooltipChat a span {
-  float: left;
+.sideBarNav__mediaMenu div a img,
+.sideBarNav__mediaMenu div:first-child a span:nth-child(2) {
   margin-right: 5px; }
 
-.sideBarNav__mediaMenu__tooltipChat a span {
+.sideBarNav__mediaMenu div:first-child a span:nth-child(2) {
   color: #1177ee;
   font-family: "Noto Sans CJK JP Bold";
   font-size: 14px;
   font-weight: 700;
-  margin-right: 5px;
   width: 98px; }
+
+.sideBarNav__mediaMenu div:first-child a span:last-child {
+  border-radius: 7px;
+  background-color: #d90909;
+  color: #ffffff;
+  font-family: "Noto Sans CJ Kjp - Medium";
+  font-size: 8px;
+  font-weight: 600;
+  height: 14px;
+  padding: 1px 2px;
+  text-align: center;
+  width: 14px; }
 
 .sideBarNav__mediaMenu div a:link {
   align-items: center;
@@ -137,32 +167,12 @@ body {
 .sideBarNav .sideBarNav__mediaMenu div a:hover span {
   color: #1177ee;
   cursor: pointer;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .sideBarNav .sideBarNav__mediaMenu div a:active span {
   color: green;
   cursor: auto;
   text-decoration: underline; }
-
-.sideBarNav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-.sideBarNav ul li {
-  margin-bottom: 29px; }
-
-li:not(.tooltipChat) > a {
-  padding: 15px 16px 14px 9px; }
-
-.sideBarNav ul li a span {
-  color: #010101;
-  font-family: "Noto Sans CJK JP Bold";
-  font-size: 14px;
-  font-weight: 700; }
-
-.sideBarNav ul li img {
-  margin-right: 5px; }
 
 .searchCategory {
   box-shadow: 1px 0 0 #dee2e6;
@@ -190,8 +200,6 @@ li:not(.tooltipChat) > a {
   border: 1px solid #010101;
   border-width: 0 0 1px 1px;
   font-family: "Noto Sans CJK JP Regular";
-  font-size: 16px;
-  font-weight: 500;
   height: 6px;
   position: absolute;
   transform: rotate(-45deg);
@@ -261,11 +269,11 @@ li:not(.tooltipChat) > a {
   font-size: 12px;
   font-weight: 700;
   height: 20px;
-  left: 4px;
+  left: 2px;
   position: absolute;
   padding: 3px 0;
   text-align: center;
-  top: 4px;
+  top: 3px;
   width: 24px; }
 
 .listChat__user div:not(.listChat__user__superIcon) span:first-child {
@@ -307,69 +315,83 @@ li:not(.tooltipChat) > a {
   overflow: hidden;
   width: 100%; }
 
-.bodyChat__frame__content--top {
+.bodyChat__frame__content__top {
   margin-bottom: 43px; }
 
-.bodyChat__frame__content--top div:first-child {
+.bodyChat__frame__content__top div:first-child {
   flex-grow: 3;
   flex-basis: 179px;
   height: auto;
   margin-right: 5px; }
 
-.bodyChat__frame__content--top div:last-child {
+.bodyChat__frame__content__top div:last-child {
   align-self: center;
   flex-grow: 7;
   flex-basis: 427px;
   height: auto; }
 
-.bodyChat__frame__content--top div:first-child img {
+.bodyChat__frame__content__top div:first-child img {
   object-fit: contain;
   width: 100%; }
 
-.bodyChat__frame__content--top div:last-child img {
-  object-fit: contain;
-  width: 100%; }
+.bodyChat__frame__content__top div:last-child {
+  width: 427px;
+  height: 100px;
+  border-radius: 20px;
+  border: 2px solid #eceff2;
+  background-color: #ffffff;
+  position: relative; }
 
-.bodyChat__frame__content--middle {
+.bodyChat__frame__content__top div:last-child:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #ffffff transparent transparent; }
+
+.bodyChat__frame__content__middle {
   margin-bottom: 30px; }
 
-.bodyChat__frame__content--middle div:first-child {
+.bodyChat__frame__content__middle div:first-child {
   align-self: center;
   flex-grow: 7;
   flex-basis: 427px;
   height: auto;
   margin-right: 17px; }
 
-.bodyChat__frame__content--middle div:last-child {
+.bodyChat__frame__content__middle div:last-child {
   flex-grow: 3;
   flex-basis: 167px;
   height: auto; }
 
-.bodyChat__frame__content--middle div:first-child img {
+.bodyChat__frame__content__middle div:first-child img {
   object-fit: contain;
   width: 100%; }
 
-.bodyChat__frame__content--middle div:last-child img {
+.bodyChat__frame__content__middle div:last-child img {
   object-fit: contain;
   width: 100%; }
 
-.bodyChat__frame__content--bottom div:first-child {
+.bodyChat__frame__content__bottom div:first-child {
   flex-grow: 3;
   flex-basis: 192px;
   height: auto;
   margin-right: 5px; }
 
-.bodyChat__frame__content--bottom div:last-child {
+.bodyChat__frame__content__bottom div:last-child {
   align-self: center;
   flex-grow: 7;
   flex-basis: 427px;
   height: auto; }
 
-.bodyChat__frame__content--bottom div:first-child img {
+.bodyChat__frame__content__bottom div:first-child img {
   object-fit: contain;
   width: 100%; }
 
-.bodyChat__frame__content--bottom div:last-child img {
+.bodyChat__frame__content__bottom div:last-child img {
   object-fit: contain;
   width: 100%; }
 
