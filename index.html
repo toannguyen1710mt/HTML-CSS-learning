@@ -10,51 +10,51 @@
 <body>
     <div class="container">
         <div class="sideBarIcon">
-            <div class="sideBarIcon__menu__top">
-                <div>
+            <ul class="sideBarIcon__menu__top">
+                <li>
                     <a href="">
                         <img alt="" src="/images/icon-chatTop.svg" />
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="">
                         <img alt="" src="/images/lap.png" />
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="">
                         <img alt="" src="/images/icon-message.png" />
                         <span>99</span>
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="">
                         <img alt="" src="/images/icon-bear.png" />
                     </a>
-                </div>
-            </div>
-            <div class="sideBarIcon__menu__bottom">
-                <div>
+                </li>
+            </ul>
+            <ul class="sideBarIcon__menu__bottom">
+                <li>
                     <a href="#">
                         <img alt="" src="/images/icon-bell.png" />
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="">
                         <img alt="" src="images/icon-question.png" />
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="">
                         <img alt="" src="images/icon-setting.png" />
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="">
                         <img alt="" src="images/icon-user.png" />
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
         <div class="sideBarNav">
             <div class="sideBarNav__dropMenu">
@@ -64,39 +64,39 @@
                 <img alt="" src="images/icon-smallMessage.png" />
                 <span>Chat</span>
             </div>
-            <div class="sideBarNav__mediaMenu">
-                <div>
+            <ul class="sideBarNav__mediaMenu">
+                <li>
                     <a href="#">
                         <img alt="" src="images/tooltip.png" />
                         <span>ダッシュボード</span>
                         <span>99</span>
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="#">
                         <img alt="" src="images/Black-Rectangle.png" />
                         <span>メッセージ配信</span> 
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="#">
                         <img alt="" src="images/icon-doubleUser.png" />
                         <span>ユーザー一覧</span>
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="#">
                         <img alt="" src="images/icon-share.png" />
                         <span>外部サービス連携</span>
                     </a>
-                </div>
-                <div>
+                </li>
+                <li>
                     <a href="#">
                         <img alt="" src="images/icon-suffle.png" />
                         <span>設定</span>
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
         <div class="searchCategory">
             <p>コンタクトユーザー</p>
@@ -156,37 +156,30 @@
                 </div>
             </div>
         </div>
-        <div class="bodyChat">
-            <div class="bodyChat__frame">
-                <div class="bodyChat__frame__content bodyChat__frame__content__top">
+        <div class="Chat">
+            <div class="Chat__frame">
+                <div class="Chat__frame__top">
+                    <img alt="" src="images/Chatting-man.png" />
                     <div>
-                        <img alt="" src="images/Chatting-man.png" />
-                    </div>
-                    <div>
-                        <!-- <img alt="" src="images/chatting-box1.png" /> -->
                         <p>ご自分のWebサイトにChatboxを設置すると、ここにお問い合わせ内容が表示されます。</p>
                     </div>
                 </div>
-                <div class="bodyChat__frame__content bodyChat__frame__content__middle">
+                <div class="Chat__frame__middle">
                     <div>
-                        <img alt="" src="images/chatting-box2.png" />
+                        <p>まずは「外部サービス連携」からChatboxを 設定してみましょう。</p>
                     </div>
-                    <div>
-                        <img alt="" src="images/display-chat.png" />
-                    </div>
+                    <img alt="" src="images/display-chat.png" />
                 </div>
-                <div class="bodyChat__frame__content bodyChat__frame__content__bottom">
+                <div class="Chat__frame__bottom">
+                    <img alt="" src="images/conversation-chat.png" />
                     <div>
-                        <img alt="" src="images/conversation-chat.png" />
-                    </div>
-                    <div>
-                        <img alt="" src="images/chatting-box3.png" />
+                        <p>有人対応とChatBot連携の自動対応を切り替えながら、お客様とコミュニケーションを取ることができます！</p>
                     </div>
                 </div>
             </div>
             <div>
-                <form class="bodyChat__form">
-                    <div class="bodyChat__form__action">
+                <form class="Chat__form">
+                    <div class="Chat__form__action">
                         <label>
                             <input name="" type="checkbox">
                             <div class="button__switch"></div>
@@ -194,15 +187,15 @@
                         </label>
                         <div>
                             <img alt="" src="images/icon-attachment.png" />
-                            <div class="bodyChat__form__action__button button__attach"></div>
+                            <div class="Chat__form__action__button button__attach"></div>
                             <span>Enterで送信</span>
-                            <button class="bodyChat__form__action__button button__send">
+                            <button class="Chat__form__action__button button__send">
                                 <img alt="" src="images/icon-send.png" />
                                 <span>送信</span>
                             </button>
                         </div>
                     </div>
-                    <div class="bodyChat__form__note">
+                    <div class="Chat__form__note">
                         <textarea placeholder="ここにテキストを入力してください(Shift + Enterキーで送信)" autofocus="autofocus"></textarea>
                         <div>0/640</div>
                     </div>
