@@ -566,6 +566,11 @@ body {
     flex-direction: row; }
     .user-info__bot-master .user-info__bot-master__content img {
       margin-right: 3px; }
+    .user-info__bot-master .user-info__bot-master__content span {
+      color: #010101;
+      font-family: "Noto Sans CJK JP Regular";
+      font-size: 14px;
+      font-weight: 400; }
 
 .user-info__bot-master h5,
 .user-info__drop-list h5,
@@ -611,6 +616,8 @@ body {
 
 .user-info__tag-name {
   margin-bottom: 26px; }
+  .user-info__tag-name .btn-group {
+    display: flex; }
   .user-info__tag-name .btn-group__item {
     align-items: center;
     background-color: #ffffff;
@@ -618,6 +625,7 @@ body {
     border-radius: 6px;
     display: flex;
     height: 22px;
+    margin-right: 6px;
     padding: 2px 3px 2px 6px;
     width: 80px; }
     .user-info__tag-name .btn-group__item button {

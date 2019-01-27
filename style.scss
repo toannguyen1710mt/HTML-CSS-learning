@@ -709,6 +709,13 @@ body {
         img {
             margin-right: 3px;
         }
+
+        span {
+            color: #010101;
+            font-family: "Noto Sans CJK JP Regular";
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
 }
 
@@ -765,7 +772,9 @@ body {
 
 .user-info__tag-name {
     margin-bottom: 26px;
-
+    .btn-group {
+        display: flex;
+    }
     .btn-group__item {
         align-items: center;
         background-color: #ffffff;
@@ -773,6 +782,7 @@ body {
         border-radius: 6px;
         display: flex;
         height: 22px;
+        margin-right: 6px;
         padding: 2px 3px 2px 6px;
         width: 80px;
         
