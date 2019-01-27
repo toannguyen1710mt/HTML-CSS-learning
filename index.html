@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sideBarIcon">
-            <ul class="sideBarIcon__menu__top">
+    <div class="calling-container">
+        <div class="calling-container__toolbar">
+            <ul class="menu-tool">
                 <li>
                     <a href="">
                         <img alt="" src="/images/icon-chatTop.svg" />
@@ -33,7 +33,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="sideBarIcon__menu__bottom">
+            <ul class="menu-setting">
                 <li>
                     <a href="#">
                         <img alt="" src="/images/icon-bell.png" />
@@ -56,41 +56,41 @@
                 </li>
             </ul>
         </div>
-        <div class="sideBarNav">
-            <div class="sideBarNav__dropMenu">
+        <div class="calling-container__sidebar-left">
+            <div class="sidebar-left__dropdown-menu">
                 <img alt="" src="images/drop-menu.png" />
             </div>
-            <div class="sideBarNav__title">
+            <div class="sidebar-left__title">
                 <img alt="" src="images/icon-smallMessage.png" />
-                <span>Chat</span>
+                <span>Chat</span> 
             </div>
-            <ul class="sideBarNav__mediaMenu">
-                <li>
+            <ul class="sidebar-left__u-menu">
+                <li class="sidebar-left__u-menu__item">
                     <a href="#">
                         <img alt="" src="images/tooltip.png" />
                         <span>ダッシュボード</span>
                         <span>99</span>
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-left__u-menu__item">
                     <a href="#">
                         <img alt="" src="images/Black-Rectangle.png" />
                         <span>メッセージ配信</span> 
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-left__u-menu__item">
                     <a href="#">
                         <img alt="" src="images/icon-doubleUser.png" />
                         <span>ユーザー一覧</span>
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-left__u-menu__item">
                     <a href="#">
                         <img alt="" src="images/icon-share.png" />
                         <span>外部サービス連携</span>
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-left__u-menu__item">
                     <a href="#">
                         <img alt="" src="images/icon-suffle.png" />
                         <span>設定</span>
@@ -98,57 +98,57 @@
                 </li>
             </ul>
         </div>
-        <div class="searchCategory">
-            <p>コンタクトユーザー</p>
-            <form>
-                <label>
-                    <select name="">
-                        <option value="コンタクトユーザー">コンタクトユーザー</option>
+        <div class="calling-container__searchbar">
+            <h4>コンタクトユーザー</h4>
+            <form class="filter-form">
+                <label class="filter-form__selection">
+                    <select class="filter-form__selection__item" name="">
+                        <option class="filter-form__selection__opt" value="コンタクトユーザー">コンタクトユーザー</option>
                     </select>
                 </label>
-                <label>
-                    <select name="">
-                        <option value="すべてのサービス">すべてのサービス</option>
+                <label class="filter-form__selection">
+                    <select class="filter-form__selection__item" name="">
+                        <option class="filter-form__selection__opt" value="すべてのサービス">すべてのサービス</option>
                     </select>
                 </label>
-                <label>
-                    <select name="">
-                        <option value="すべてのステータス">すべてのステータス</option>
+                <label class="filter-form__selection">
+                    <select class="filter-form__selection__item" name="">
+                        <option class="filter-form__selection__opt" value="すべてのステータス">すべてのステータス</option>
                     </select>
                 </label>
-                <input type="search" name="" value="　 キーワード検索">
+                <input class="filter-form__search-input" type="search" name="" value="　 キーワード検索">
             </form>
-            <div class="listChat">
-                <div class="listChat__user">
+            <div class="chat-list">
+                <div class="chat-list__user">
                     <img alt="" src="images/avatar-text.png" />
-                    <div>
+                    <div class="chat-list__user__content">
                         <span>NameName</span>
                         <span>問い合わせ開始</span>
                     </div>
                     <img alt="" src="images/icon-facebook.png" />
                 </div>
-                <div class="listChat__user">
-                    <div class="listChat__user__superIcon">
+                <div class="chat-list__user">
+                    <div class="chat-list__user__avatar">
                         <span>2</span>
                         <img alt="" src="images/avatar.png" />
                     </div>
-                    <div>
+                    <div class="chat-list__user__content">
                         <span>NameName</span>
                         <span>問い合わせ開始</span>
                     </div>
                     <img alt="" src="images/icon-line.png" />
                 </div>
-                <div class="listChat__user">
+                <div class="chat-list__user">
                     <img alt="" src="images/avatar-user.png" />
-                    <div>
+                    <div class="chat-list__user__content">
                         <span>NameName</span>
                         <span>問い合わせ開始</span>
                     </div>
                     <img alt="" src="images/icon-skype.png" />
                 </div>
-                <div class="listChat__user">
+                <div class="chat-list__user">
                     <img alt="" src="images/avatar-user.png" />
-                    <div>
+                    <div class="chat-list__user__content">
                         <span>NameName</span>
                         <span>問い合わせ開始</span>
                     </div>
@@ -156,91 +156,99 @@
                 </div>
             </div>
         </div>
-        <div class="Chat">
-            <div class="Chat__frame">
-                <div class="Chat__frame__top">
+        <div class="calling-container__body">
+            <div class="wrap__snippet-message">
+                <div class="snippet-message__item">
                     <img alt="" src="images/Chatting-man.png" />
-                    <div>
+                    <div class="snippet-message__item__content">
                         <p>ご自分のWebサイトにChatboxを設置すると、ここにお問い合わせ内容が表示されます。</p>
                     </div>
                 </div>
-                <div class="Chat__frame__middle">
-                    <div>
+                <div class="snippet-message__item">
+                    <div class="snippet-message__item__content">
                         <p>まずは「外部サービス連携」からChatboxを 設定してみましょう。</p>
                     </div>
                     <img alt="" src="images/display-chat.png" />
                 </div>
-                <div class="Chat__frame__bottom">
+                <div class="snippet-message__item">
                     <img alt="" src="images/conversation-chat.png" />
-                    <div>
+                    <div class="snippet-message__item__content"s>
                         <p>有人対応とChatBot連携の自動対応を切り替えながら、お客様とコミュニケーションを取ることができます！</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <form class="Chat__form">
-                    <div class="Chat__form__action">
-                        <label>
+            <div class="wrap__chat-form">
+                <form class="chat-form">
+                    <div class="chat-form__header">
+                        <label class="change-state">
                             <input name="" type="checkbox">
-                            <div class="button__switch"></div>
-                            <span>自動応答OFF</span>
+                            <button class="change-state__toggle-btn"></button>
+                            <span class="change-state__text">自動応答OFF</span>
                         </label>
-                        <div>
+                        <div class="submit">
                             <img alt="" src="images/icon-attachment.png" />
-                            <div class="Chat__form__action__button button__attach"></div>
-                            <span>Enterで送信</span>
-                            <button class="Chat__form__action__button button__send">
+                            <button class="submit__enter-btn"></button>
+                            <span class="submit__text">Enterで送信</span>
+                            <button class="submit__send-btn">
                                 <img alt="" src="images/icon-send.png" />
-                                <span>送信</span>
+                                <span class="submit__send-btn__text">送信</span>
                             </button>
                         </div>
                     </div>
-                    <div class="Chat__form__note">
+                    <div class="chat-form__footer">
                         <textarea placeholder="ここにテキストを入力してください(Shift + Enterキーで送信)" autofocus="autofocus"></textarea>
-                        <div>0/640</div>
+                        <span>0/640</span>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="userInfo">
-            <div class="userInfo__nameSearch">
-                <img alt="" src="images/avatar.png" />
-                <input name="Name" type="text" placeholder="NameName">
-                <img alt="" src="images/triple-dot.png"/>
-            </div>
-            <div class="userInfo__BotMaster">
-                <span>設定中のボット</span>
-                <div>
-                    <img alt="" src="images/icon-cat.png" />
-                    <span>Bot Master</span>
+        <div class="calling-container__sidebar-right">
+            <form class="user-info">
+                <div class="user-info__name">
+                    <img alt="" src="images/avatar.png" />
+                    <input name="Name" type="text" placeholder="NameName">
+                    <img alt="" src="images/triple-dot.png"/>
                 </div>
-            </div>
-            <div class="userInfo__filterName">
-                <span>ステータス</span> 
-                <label>
-                    <select name="list-name-reference">
-                        <option value="お問い合せ開始">お問い合せ開始</option>
-                    </select>
-                </label>
-            </div>
-            <div class="userInfo__nameTag">
-                <span>タグ設定</span>
-                <div>
-                    <button>
-                        <span>Tag name</span>
-                        <img alt="" src="images/icon-delete.png"/>
-                    </button>
-                    <button>
-                        <span>Tag name</span>
-                        <img alt="" src="images/icon-delete.png"/>
-                    </button>                
+                <div class="user-info__bot-master">
+                    <h5>設定中のボット</h5>
+                    <div class="user-info__bot-master__content">
+                        <img alt="" src="images/icon-cat.png" />
+                        <span>Bot Master</span>
+                    </div>
                 </div>
-                <input name="tagname" type="text" placeholder="タグを入力してください">
-            </div>
-            <div class="userInfo__note">
-                <span>メモ</span>
-                <textarea placeholder="メモをご入力ください"></textarea>
-            </div>
+                <div class="user-info__drop-list">
+                    <h5>ステータス</h5> 
+                    <label>
+                        <select name="drop-list-reference">
+                            <option value="お問い合せ開始">お問い合せ開始</option>
+                            <option value="New York">New York</option>
+                            <option value="Chicago">Chicago</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="user-info__tag-name">
+                    <h5>タグ設定</h5>
+                    <div class="btn-group">
+                        <div class="btn-group__item">
+                            <span>Tag name</span>
+                            <button>
+                                <div></div>
+                            </button>
+                        </div>
+                        <div class="btn-group__item">
+                            <span>Tag name</span>
+                            <button>
+                                <div></div>
+                            </button>
+                        </div>                
+                    </div>
+                    <input name="tagname" type="text" placeholder="タグを入力してください">
+                </div>
+                <div class="user-info__note">
+                    <h5>メモ</h5>
+                    <textarea placeholder="メモをご入力ください"></textarea>
+                </div>
+            </form>
         </div>
     </div>
 </body>
